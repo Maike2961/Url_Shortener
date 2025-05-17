@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: UrlShortener
+
+  data:
+    mongodb:
+      uri: mongodb://mongoadmin:mongoadmin@localhost:27017/shortener_db?authSource=admin

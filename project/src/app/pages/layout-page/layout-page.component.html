@@ -1,0 +1,23 @@
+<app-layout-url 
+[btnDisabled]="!formUrl.valid"
+(onSubmit)="submit()" 
+btnText="Send now">
+    <form [formGroup]="formUrl">
+
+        <label for="url">Url</label>
+        <div class="input-url">
+            <input [type]="type" [placeholder]="placeholder" formControlName="url"/>
+            <i class="fa-solid fa-link"></i>
+        </div>
+
+        <app-invalid-url-layout
+        [validUrl]="formUrl.errors?.['invalidUrl'] && formUrl.get('url')?.touched"
+        validText="Insira url corretamente"
+        ></app-invalid-url-layout>
+    </form>
+
+    <app-valid-url
+    urlText="Link Shorten"
+    [urlValid]="url"
+    ></app-valid-url>
+</app-layout-url>

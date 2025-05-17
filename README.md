@@ -31,6 +31,3 @@ This is a full-stack URL shortener application built with Angular (frontend), Sp
 - npm install
 - ng s
 ```
-
-
-

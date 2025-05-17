@@ -1,0 +1,9 @@
+<main>
+    <section class="container">
+        <ng-content></ng-content>
+
+        <div class="button-send">
+            <button class="btnSend" (click)="submit()" [disabled]="btnDisabled">{{btnText}}</button>
+        </div>
+    </section>
+</main>

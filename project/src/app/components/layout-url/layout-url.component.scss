@@ -1,0 +1,43 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .container{
+        width: 40vw;
+        border: 2px solid rgba(255,255,255, .2);
+        border-radius: 1rem;
+        background-color: transparent;
+        box-shadow: 0 0 10px rgba(0,0,0, .2);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        padding: 2rem 3rem;
+        
+        .button-send{
+            margin-top: 2rem;
+            text-align: center;
+
+            .btnSend{
+                padding: .4rem;
+                cursor: pointer;
+                background-color: white;
+                border: none;
+                font-size: 15px;
+                text-transform: capitalize;
+                border-radius: 2rem;
+                width: 100%;
+
+                &:disabled{
+                    cursor: none;
+                    opacity: 0.8;
+                }
+            }
+            
+        .btnSend:hover{
+            background-color: rgba(255,255,255, .2);
+            transition: .5s ease-in;
+        }
+        }
+    }
+}
